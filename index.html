@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            max-height: 100vh;
+            width: 200px;
+            overflow-y: scroll;
+        }
+
+        .country {
+            padding: 10px;
+            background-color: #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .country:hover {
+            background-color: rgb(182, 165, 165);
+        }
+
+        .content {
+            flex: 1;
+            height: 100vh
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="content"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
